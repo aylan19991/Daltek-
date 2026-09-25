@@ -1,0 +1,43 @@
+{
+  "name": "daltek",
+  "private": true,
+  "version": "1.0.0",
+  "description": "DALTEK — Système numérique de gestion de files d'attente et de tickets",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "cap:sync": "cap sync",
+    "cap:add:android": "cap add android",
+    "cap:copy:android": "cap copy android",
+    "cap:open:android": "cap open android",
+    "android:dev": "npm run build && cap sync && cap open android",
+    "apk:debug": "npm run build && cap sync && echo 'Run: cd android && ./gradlew assembleDebug' && echo 'APK at: android/app/build/outputs/apk/debug/app-debug.apk'",
+    "apk:release": "npm run build && cap sync && echo 'Run: cd android && ./gradlew assembleRelease' && echo 'APK at: android/app/build/outputs/apk/release/app-release.apk'",
+    "aab:release": "npm run build && cap sync && echo 'Run: cd android && ./gradlew bundleRelease' && echo 'AAB at: android/app/build/outputs/bundle/release/app-release.aab'"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/app": "^6.0.1",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/haptics": "^6.0.1",
+    "@capacitor/status-bar": "^6.0.1",
+    "@supabase/supabase-js": "^2.45.4",
+    "lucide-react": "^0.453.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  }
+}

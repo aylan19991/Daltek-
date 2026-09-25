@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="daltekIcon" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a80f5"/>
+      <stop offset="1" stop-color="#142d57"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#daltekIcon)"/>
+  <path d="M160 128 L160 384 L240 384 C320 384 368 336 368 256 C368 176 320 128 240 128 L160 128 Z" stroke="white" stroke-width="24" stroke-linejoin="round" fill="none"/>
+  <circle cx="372" cy="140" r="28" fill="#f97316"/>
+</svg>
