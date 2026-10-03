@@ -1,4 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <radialGradient id="bgGradFull" cx="30%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#141923" />
+      <stop offset="100%" stop-color="#080A0E" />
+    </radialGradient>
+    <linearGradient id="goldPrimFull" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3B0" />
+      <stop offset="30%" stop-color="#F5B82E" />
+      <stop offset="70%" stop-color="#E29A10" />
+      <stop offset="100%" stop-color="#B87304" />
+    </linearGradient>
+    <linearGradient id="goldAccentFull" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA7" />
+      <stop offset="50%" stop-color="#F3BA35" />
+      <stop offset="100%" stop-color="#9C6208" />
+    </linearGradient>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="400" rx="36" fill="url(#bgGradFull)" stroke="#F5B82E" stroke-opacity="0.2" stroke-width="2" />
+
+  <!-- Emblem on the Left -->
+  <g transform="translate(190, 200) scale(0.62)">
+    <g transform="translate(-256, -256)">
+      
+
   <defs>
     <!-- Background Gradient -->
     <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%" fx="50%" fy="30%">
@@ -86,5 +114,26 @@
     <circle cx="-15" cy="-28" r="8" fill="#FFF8D6" />
     <circle cx="15" cy="0" r="10" fill="#FFF8D6" />
     <circle cx="-15" cy="28" r="8" fill="#FFF8D6" />
+  </g>
+
+
+    </g>
+  </g>
+
+  <!-- Typography Right -->
+  <g transform="translate(420, 220)">
+    <!-- Brand Name: DALTEK -->
+    <text x="0" y="0" font-family="'Syne', 'Outfit', sans-serif" font-size="104" font-weight="800" fill="url(#goldPrimFull)" letter-spacing="8" filter="url(#softGlow)">
+      DALTEK
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="4" y="52" font-family="'Outfit', sans-serif" font-size="24" font-weight="600" fill="#E2E8F0" letter-spacing="6" opacity="0.9">
+      GESTION DE FILE D'ATTENTE TEMPS RÉEL
+    </text>
+
+    <text x="4" y="86" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="500" fill="#F5B82E" letter-spacing="4" opacity="0.8">
+      SUITE UNIFIÉE • GUICHETS • TV • MOBILE • NATIVE
+    </text>
   </g>
 </svg>

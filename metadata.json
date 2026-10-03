@@ -1,0 +1,6 @@
+{
+  "name": "DALTEK Orchestration Core",
+  "description": "Système de gestion de file d'attente temps réel haute-conciergerie : Console Personnel, Affichage Écran TV, Suivi Client Mobile et Administration Centrale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,51 +1,122 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  html {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  body {
-    @apply bg-neutral-50 text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    line-height: 1.5;
-    overscroll-behavior-y: none;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-    line-height: 1.2;
-  }
-
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  ::-webkit-scrollbar-track {
-    @apply bg-transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    @apply rounded-full bg-neutral-300 dark:bg-neutral-700;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-neutral-400 dark:bg-neutral-600;
-  }
+@theme {
+  --color-surface: #111317;
+  --color-surface-dim: #111317;
+  --color-surface-bright: #37393e;
+  --color-surface-container-lowest: #0c0e12;
+  --color-surface-container-low: #1a1c20;
+  --color-surface-container: #1e2024;
+  --color-surface-container-high: #282a2e;
+  --color-surface-container-highest: #333539;
+  --color-on-surface: #e2e2e8;
+  --color-on-surface-variant: #d0c5af;
+  --color-outline: #99907c;
+  --color-outline-variant: #4d4635;
+  --color-primary: #f2ca50;
+  --color-primary-fixed: #ffe088;
+  --color-primary-fixed-dim: #e9c349;
+  --color-primary-container: #d4af37;
+  --color-on-primary: #3c2f00;
+  --color-on-primary-container: #554300;
+  --color-secondary: #c3c6d1;
+  --color-secondary-container: #454952;
+  --color-on-secondary: #2c3039;
+  --color-tertiary: #53e97d;
+  --color-tertiary-container: #2ecc64;
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+  --color-on-error: #690005;
+  --color-on-error-container: #ffdad6;
 }
 
 @layer utilities {
-  .border-3 {
-    border-width: 3px;
+  .font-display-hero {
+    font-family: 'Syne', sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
   }
+  .font-ticket-counter {
+    font-family: 'Syne', sans-serif;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.01em;
+    font-weight: 800;
+  }
+  .font-headline-lg {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+  .font-headline-md {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  .font-title-sm {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .font-body-lg {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .font-body-md {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .font-body-sm {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .font-token-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+  .font-token-code-sm {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .font-telemetry-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+}
 
-  /* Safe area for mobile devices */
-  .safe-top {
-    padding-top: env(safe-area-inset-top);
-  }
-  .safe-bottom {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
+/* Material symbols styling */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
